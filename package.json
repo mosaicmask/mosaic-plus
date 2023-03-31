@@ -1,0 +1,23 @@
+{
+  "name": "mosaic-plus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.60.0",
+    "typescript": "^5.0.3",
+    "vue": "^3.2.36"
+  },
+  "dependencies": {
+    "@mosaic-plus/components": "workspace:^",
+    "@mosaic-plus/theme-chalk": "workspace:^",
+    "@mosaic-plus/utils": "workspace:^"
+  }
+}
