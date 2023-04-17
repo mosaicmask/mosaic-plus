@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import App from "./app.vue";
-import { XbbIcon } from "@mosaic-plus/components/icon";
+import { MIcon } from "@mosaic-plus/components/icon";
 
 const app = createApp(App);
-app.use(XbbIcon)
+app.use(MIcon)
 app.mount("#app");

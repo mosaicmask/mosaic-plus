@@ -1,5 +1,5 @@
 <template>
-  <i class="xbb-icon" :style="style">
+  <i class="m-icon" :style="style">
     <slot></slot>
   </i>
 </template>
@@ -7,7 +7,7 @@
 import { computed, defineComponent } from "vue";
 import { iconProps } from './icon'
 export default defineComponent({
-  name: 'XbbIcon',
+  name: 'MIcon',
   props: iconProps,
   setup(props) {
     const style = computed(() => {
@@ -18,7 +18,6 @@ export default defineComponent({
         ...(props.size ? { 'font-size': props.size + 'px' } : {}),
         ...(props.color ? { 'color': props.color } : {}),
       }
-      console.log('style', style)
       return style
     })
     return { style }

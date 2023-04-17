@@ -2,3 +2,4 @@
 packages:
   - 'packages/**'
   - 'examples'
+  - play # 测试编写组件
