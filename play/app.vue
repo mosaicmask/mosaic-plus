@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-
+import { MIcon } from "@mosaic-plus/components/icon";
 </script>
 
 <style lang="scss" scoped>
