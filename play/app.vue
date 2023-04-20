@@ -1,15 +1,10 @@
+<!--
+ * @Author: jing.chen
+ * @Date: 2021-10-28 19:12:26
+ * @LastEditors: jing.chen
+ * @LastEditTime: 2021-10-28 22:05:21
+ * @Description: 
+-->
 <template>
-  <div>
-    <h1>测试</h1>
-    <m-icon color="red" :size="30" class="m-icon-search"></m-icon>
-    <h1>hello</h1>
-  </div>
+  <XbbIcon color="red" :size="30" class="xbb-icon-duihao"></XbbIcon>
 </template>
-
-<script setup lang="ts">
-import { MIcon } from "@mosaic-plus/components/icon";
-</script>
-
-<style lang="scss" scoped>
-
-</style>
