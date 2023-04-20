@@ -7,7 +7,7 @@
  */
 import { spawn } from "child_process";
 import { projectRoot } from "./paths";
-export const withTaskName = <T>(name: string, fn:T) => 
+export const withTaskName = (name: string, fn:any) => 
   Object.assign(fn, { displayName: name });
 
 
