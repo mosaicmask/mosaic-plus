@@ -36,6 +36,6 @@ npm run dev
 ## dist目录打包出的整体结果
 - es/lib两种规范
 - theme-chalk
-- 最终发布的模块就是dist模块 -》 element-plus -》 xbb-plus
+- 最终发布的模块就是dist模块 -》 element-plus -》 mosaic-plus
 
-## xbb-plus就是我们组件库的整合入口
+## mosaic-plus就是我们组件库的整合入口

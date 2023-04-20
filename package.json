@@ -1,5 +1,5 @@
 {
-  "name": "xbb-plus",
+  "name": "mosaic-plus",
   "private": true,
   "description": "",
   "main": "index.js",
@@ -35,8 +35,8 @@
     "vue": "^3.2.20"
   },
   "dependencies": {
-    "@xbb-plus/components": "workspace:^1.0.0",
-    "@xbb-plus/theme-chalk": "workspace:^1.0.0",
-    "@xbb-plus/utils": "workspace:^1.0.0"
+    "@mosaic-plus/components": "workspace:^",
+    "@mosaic-plus/theme-chalk": "workspace:^",
+    "@mosaic-plus/utils": "workspace:^"
   }
 }

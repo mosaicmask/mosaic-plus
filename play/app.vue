@@ -6,5 +6,5 @@
  * @Description: 
 -->
 <template>
-  <XbbIcon color="red" :size="30" class="xbb-icon-duihao"></XbbIcon>
+  <MIcon color="red" :size="30" class="m-icon-duihao"></MIcon>
 </template>

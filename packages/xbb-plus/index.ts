@@ -5,11 +5,11 @@
  * @LastEditTime: 2021-11-15 14:03:40
  * @Description: 
  */
-import { XbbIcon } from "@xbb-plus/components";
+import { MIcon } from "@mosaic-plus/components";
 import type { App } from "vue"; // ts中的优化只获取类型
 // ....
 
-const components = [XbbIcon];
+const components = [MIcon];
 const install = (app: App) => {
   // 每个组件在编写的时候都提供了install方法
 
@@ -19,7 +19,7 @@ const install = (app: App) => {
 export default {
   install,
 };
-export * from "@xbb-plus/components";
+export * from "@mosaic-plus/components";
 
 //app.use(XbbPlus)
 

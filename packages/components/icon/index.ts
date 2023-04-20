@@ -6,13 +6,9 @@
  * @Description: 入口
  */
 import Icon from "./src/icon.vue";
-import { withInstall } from "@xbb-plus/utils/with-install";
-// Icon.install = function(app: App) {
-//   app.component(Icon.name, Icon)
-// }
-
-const XbbIcon = withInstall(Icon);
+import { withInstall } from "@mosaic-plus/utils/with-install";
+const MIcon = withInstall(Icon);
 export {
-  XbbIcon
+  MIcon
 }
-export default XbbIcon;
+export default MIcon;
