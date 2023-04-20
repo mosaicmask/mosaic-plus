@@ -5,14 +5,20 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp -f build/gulpfile.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/gulp": "^4.0.10",
+    "@vue-macros/volar": "^0.9.5",
+    "gulp": "^4.0.2",
     "sass": "^1.60.0",
+    "sucrase": "^3.32.0",
     "typescript": "^5.0.3",
+    "unplugin-vue-macros": "^2.0.0",
     "vue": "^3.2.36"
   },
   "dependencies": {
