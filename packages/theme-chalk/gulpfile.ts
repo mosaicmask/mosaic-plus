@@ -22,15 +22,15 @@ function compile() {
     .pipe(dest("./dist"));
 }
 
-function copyfont() {
+function copyFont() {
   return src(path.resolve(__dirname, "./src/fonts/**"))
     // .pipe(cleanCss())
     .pipe(dest("./dist/fonts"));
 }
-function copyfullStyle() {
+function copyFullStyle() {
   return src(path.resolve(__dirname, "./dist/**")).pipe(
     dest(path.resolve(__dirname, "../../dist/theme-chalk"))
   );
 }
 
-export default series(compile, copyfont, copyfullStyle);
+export default series(compile, copyFont, copyFullStyle);
