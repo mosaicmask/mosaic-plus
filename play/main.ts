@@ -7,12 +7,12 @@
  */
 import { createApp } from "vue";
 import App from "./app.vue";
-import XbbIcon from "@xbb-plus/components/icon";
-import '@xbb-plus/theme-chalk/src/index.scss'
-// import xbbPlus from "xbb-plus";
-// import 'xbb-plus/theme-chalk/index.css'
+import MIcon from "@mosaic-plus/components/icon";
+import '@mosaic-plus/theme-chalk/src/index.scss'
+// import xbbPlus from "mosaic-plus";
+// import 'mosaic-plus/theme-chalk/index.css'
 const app = createApp(App);
 
-app.use(XbbIcon);
+app.use(MIcon);
 // app.use(xbbPlus)
 app.mount("#app");

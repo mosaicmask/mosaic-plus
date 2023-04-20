@@ -4,14 +4,14 @@ importers:
 
   .:
     dependencies:
-      '@xbb-plus/components':
-        specifier: workspace:^1.0.0
+      '@mosaic-plus/components':
+        specifier: workspace:^
         version: link:packages/components
-      '@xbb-plus/theme-chalk':
-        specifier: workspace:^1.0.0
+      '@mosaic-plus/theme-chalk':
+        specifier: workspace:^
         version: link:packages/theme-chalk
-      '@xbb-plus/utils':
-        specifier: workspace:^1.0.0
+      '@mosaic-plus/utils':
+        specifier: workspace:^
         version: link:packages/utils
     devDependencies:
       '@rollup/plugin-commonjs':
@@ -79,6 +79,8 @@ importers:
         version: registry.npmmirror.com/vue@3.2.47
 
   packages/components: {}
+
+  packages/mosaic-plus: {}
 
   packages/theme-chalk: {}
 

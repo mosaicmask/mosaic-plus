@@ -16,7 +16,7 @@ export const buildConfig = {
       path: path.resolve(outDir, "es"),
     },
     bundle: {
-      path: "xbb-plus/es",
+      path: "mosaic-plus/es",
     },
   },
   cjs: {
@@ -27,7 +27,7 @@ export const buildConfig = {
       path: path.resolve(outDir, "lib"),
     },
     bundle: {
-      path: "xbb-plus/lib",
+      path: "mosaic-plus/lib",
     },
   },
 };

@@ -29,7 +29,7 @@ export const run = async (command: string) => {
 
 export const pathRewriter = (format)=>{
   return (id:string) => {
-    id = id.replace(/@xbb-plus/g, `xbb-plus/${format}`);
+    id = id.replace(/@mosaic-plus/g, `mosaic-plus/${format}`);
     return id
   }
 }

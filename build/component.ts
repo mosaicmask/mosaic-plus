@@ -35,13 +35,13 @@ const buildEachComponent = async () => {
     const config = {
       input,
       plugins: [nodeResolve(), vue(), typescript(), commonjs()],
-      external: (id) => /^vue/.test(id) || /^@xbb-plus/.test(id),
+      external: (id) => /^vue/.test(id) || /^@mosaic-plus/.test(id),
     };
     const bundle = await rollup(config);
     const options = Object.values(buildConfig).map((config) => ({
       format: config.format,
       file: path.resolve(config.output.path, `components/${file}/index.js`),
-      paths: pathRewriter(config.output.name), // @xbb-plus => xbb-plus/es  xbb-plus/lib
+      paths: pathRewriter(config.output.name), // @mosaic-plus => mosaic-plus/es  mosaic-plus/lib
     }));
 
     await Promise.all(
@@ -62,7 +62,7 @@ async function genTypes() {
       outDir: path.resolve(outDir, "types"),
       baseUrl: projectRoot,
       paths: {
-        "@xbb-plus/*": ["packages/*"],
+        "@mosaic-plus/*": ["packages/*"],
       },
       skipLibCheck: true,
       strict: false,
@@ -109,7 +109,7 @@ async function genTypes() {
       await fs.mkdir(path.dirname(filepath), {
         recursive: true,
       });
-      // @xbb-plus -> xbb-plus/es -> .d.ts 肯定不用去lib下查找
+      // @mosaic-plus -> mosaic-plus/es -> .d.ts 肯定不用去lib下查找
       await fs.writeFile(filepath, pathRewriter("es")(outputFile.getText()));
     });
     await Promise.all(tasks);
